@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lay_root"
+    tools:context="com.demo.joe.launchmodel.TopActivity">
+
+    <Button
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="top"
+        app:layout_constraintLeft_toLeftOf="@+id/lay_root"
+        app:layout_constraintRight_toRightOf="@+id/lay_root"/>
+
+    <Button
+        android:id="@+id/instance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="instance"
+        app:layout_constraintLeft_toLeftOf="@+id/lay_root"
+        app:layout_constraintRight_toRightOf="@+id/lay_root"
+        android:layout_marginTop="45dp"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        />
+
+    <Button
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="task"
+        app:layout_constraintLeft_toLeftOf="@+id/lay_root"
+        app:layout_constraintRight_toRightOf="@+id/lay_root"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/instance"/>
+
+    <Button
+        android:id="@+id/standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="standard"
+        app:layout_constraintLeft_toLeftOf="@+id/lay_root"
+        app:layout_constraintRight_toRightOf="@+id/lay_root"
+        android:layout_marginTop="53dp"
+        app:layout_constraintTop_toBottomOf="@+id/task"/>
+
+</android.support.constraint.ConstraintLayout>
